@@ -1,3 +1,4 @@
+import Navbar from "@/components/layout/NavBar";
 import { Inter } from "@next/font/google";
 import Head from "next/head";
 
@@ -13,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className="text-red-600">Hello</h1>
+        <Navbar />
       </main>
     </>
   );
