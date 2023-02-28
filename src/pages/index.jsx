@@ -1,7 +1,10 @@
-import { Inter } from "@next/font/google";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
+import Testmonials from "@/components/sections/Testmonials";
+import { Archivo } from "@next/font/google";
 import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
+const archivo = Archivo({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -12,8 +15,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1 className="text-red-600">Hello</h1>
+      <main className={`${archivo.className}`}>
+        <Navbar />
+        <Hero />
+        <Testmonials />
       </main>
     </>
   );
